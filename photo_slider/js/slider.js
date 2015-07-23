@@ -2,25 +2,25 @@ sliderInt = 1;
 sliderNext = 2;
 
 $(document).ready(function(){
-	$('#slider > img#1').fadeIn(300);
+	$('#slider>img#1').fadeIn(300);
 
 	startSlider();
 });
 
 function startSlider(){
-	count = $('#slider > img').size();
+	count = $('#slider img').size();
 
-	if(sliderNext > count){
+	loop = setInterval(function(){
+		 $('#slider img').fadeOut(300);
+		 $('#slider img#' + sliderNext).fadeIn(300);
+
+		 sliderInt = sliderNext;
+		 sliderNext += 1;
+
+		 if(sliderNext > count){
 		sliderNext = 1;
 		sliderInt = 1;
 	}
-
-	loop = setInterval(function(){
-		 $('slider > img').fadeOut(300);
-		 $('slider >img' + sliderNext).fadeIn(300);
-
-		 sliderInt = sliderNext;
-		 sliderNext = sliderNext + 1;
 
 	}, 3000)
 };
@@ -37,11 +37,12 @@ function next(){
 }
 
 function stopLoop(){
-	window.clearInterval(loop);
+	clearInterval(loop);
 }
 
 function showSlide(id){
 	stopLoop();
+
 	if(id > count){
 		id = 1;
 	}
@@ -49,8 +50,8 @@ function showSlide(id){
 		id = count;
 	}
 
-		 $('slider > img').fadeOut(300);
-		 $('slider >img' + id).fadeIn(300);
+		 $('slider img').fadeOut(300);
+		 $('slider img' + id).fadeIn(300);
 
 		 sliderInt = id;
 		 sliderNext = id + 1;
@@ -58,7 +59,7 @@ function showSlide(id){
 	startSlider();
 }
 
-$('#slider > img').hover(
+$('#slider img').hover(
 	function(){
 		stopLoop();
 	},

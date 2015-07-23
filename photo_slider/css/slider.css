@@ -1,18 +1,25 @@
+body{
+	background-color: grey;
+}
+
 .wrapper{
 	width: 700px;
-	margin: 0 auto;
+	margin: auto;
 }
 
 #slider{
 	width: 700px; height: 400px;
 	overflow: hidden;
 	margin: 30px auto;
+	border: black 3px solid;
+	border-radius: 10px;
 }
 
 #slider > img{
 	width: 700px; height: 400px;
 	float: left;
 	display: none;
+	border-radius: 10px;
 }
 
 a{
@@ -25,4 +32,12 @@ a{
 
 a.left{float: left;}
 a.right{float: right;}
+
+a.right, a.left{
+	border: black 3px solid;
+	border-radius: 10px;
+	width: 70px;
+	text-align: center;
+	box-shadow: 5px 5px black;
+}
 
