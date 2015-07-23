@@ -50,8 +50,10 @@ function showSlide(id){
 		id = count;
 	}
 
-		 $('slider img').fadeOut(300);
-		 $('slider img' + id).fadeIn(300);
+	console.log(id)
+
+		 $('#slider>img').fadeOut(300);
+		 $('#slider>img#' + id).fadeIn(300);
 
 		 sliderInt = id;
 		 sliderNext = id + 1;
