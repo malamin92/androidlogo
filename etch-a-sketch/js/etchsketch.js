@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	setup(2);	
+	setup(50);	
 
 });
 
@@ -8,14 +8,14 @@ $('#reset').click(function(){
 
 		$('.container').empty();
 
-		userChoice = prompt("Enter how many boxes you want in each row and column:");
+		userChoice = prompt("Enter how many boxes you want in each row and column (Less than 120):");
 		setup(userChoice);
 });
 
 function setup(numOfSquares){
 
 	var numSquares = numOfSquares;
-	var squareSide = 600 / numSquares;
+	var squareSide = 500 / numSquares;
 	var totalSquares = numSquares * numSquares;
 
 
@@ -25,7 +25,7 @@ function setup(numOfSquares){
 
 
 	$('.container').on('mouseenter', '.gridSquare', function(){
-		$(this).css('background-color', '#707070');
+		$(this).css('background-color', 'black');
 	});
 
 	$('.gridSquare').width(squareSide);
