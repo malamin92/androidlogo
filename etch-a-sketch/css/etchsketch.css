@@ -3,11 +3,13 @@
 	background-color: grey;
 	margin: 10px auto;
 	margin-bottom: 50px;
-	width: 660px;
-	height: 500;
+	width: 600px;
+	height: 600px;
 	position: relative;
-	top: 10px;
-
+	font-size: 0;
+	top: 50px;
+	border: 5px solid #1F1F1F;
+	
 
 }
 
@@ -28,7 +30,7 @@
 
 #reset{
 	font-size: 2em;
-	margin-top: 15px;
+	margin-top: 40px;
 	width: 150px;
 	height: 70px;
 	font: sans-serif;
