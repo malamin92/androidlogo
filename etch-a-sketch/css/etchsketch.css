@@ -1,16 +1,40 @@
+
 .container{
 	background-color: grey;
-	margin: 0 auto;
-	text-align: center;
-	font-size: 0;
-	margin-bottom: 30px;
+	margin: 10px auto;
+	margin-bottom: 50px;
+	width: 660px;
+	height: 500;
+	position: relative;
+	top: 10px;
+
+
 }
 
-#gridSquare{
-	width: 16px; height: 16px;
+.gridSquare{
 	background-color: black;
 	display: inline-block;
 	vertical-align: top;
-
 }
 
+.wrapper{
+	text-align: center;
+	background-color: #CC3300;
+	width: 860px;
+	height: 900px;
+	margin: auto;
+	border-radius: 15px;
+}
+
+#reset{
+	font-size: 2em;
+	margin-top: 15px;
+	width: 150px;
+	height: 70px;
+	font: sans-serif;
+	border-radius: 10px;
+	margin-bottom: 0px;
+	appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}

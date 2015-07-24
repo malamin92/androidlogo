@@ -1,20 +1,35 @@
 $(document).ready(function(){
-	var suareside = 16;
-	var height = 40;
-	var width = 40;
+	var numSquares = 20;
+	var squareSide = 660 / numSquares;
 
-	$('.container').height(height*suareside);
-	$('.container').width(width*suareside);
 
-	for(var rows = 0; rows < width; rows++){
-	$('<div id="gridSquare"></div>').appendTo('.container')
-		for(var cols = 0; cols < height; cols++){
-			$('<div id="gridSquare"></div>').appendTo('.container')
+	console.log(squareSide);
+
+	for(var rows = 0; rows < numSquares; rows++){
+	$('<div class="gridSquare"></div>').appendTo('.container')
+		for(var cols = 0; cols < numSquares; cols++){
+			$('<div class="gridSquare"></div>').appendTo('.container')
 		}
 	}
 
-	$('.container').on('mouseenter', '#gridSquare', function(){
+
+	$('.container').on('mouseenter', '.gridSquare', function(){
 		$(this).css('background-color', 'white');
 	});
 
+	$('.gridSquare').width(squareSide);
+	$('.gridSquare').height(squareSide);
+
+	$('#reset').click(function(){
+
+
+	});
+
+	funtion
 });
+
+
+function setup(){
+
+	
+}
