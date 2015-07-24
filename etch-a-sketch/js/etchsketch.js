@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+	
 	setup(50);	
 
 });
@@ -16,7 +16,7 @@ $('#randomize').click(function(){
 
 		$('.container').empty();
 
-		userChoice = prompt("Enter how many boxes you want in each row and column (Less than 120):");
+		userChoice = prompt("Enter how many boxes you want + in each row and column (Less than 120):");
 		randomSetup(userChoice);
 });
 
