@@ -3,6 +3,7 @@ body{
 	text-align: center;
 }
 
+/*Background div where the small grid shows up on.*/
 .container{
 	background-color: grey;
 	margin: 4px auto;
@@ -13,17 +14,15 @@ body{
 	font-size: 0;
 	top: 30px;
 	border: 5px solid #1F1F1F;
-
-	
-
 }
 
+/*All the little squares that make oup the etch-a-sketch*/
 .gridSquare{
 	background-color: grey;
 	display: inline-block;
 	vertical-align: top;
 }
-
+/*Holds the container*/
 .wrapper{
 	text-align: center;
 	background-color: #CC3300;
@@ -34,6 +33,7 @@ body{
 	box-shadow: 15px 15px 5px black;
 }
 
+/*The buttons thats are implemented on the page*/
 #reset, #randomize{
 	font-size: 2em;
 	margin-top: 30px;
@@ -51,6 +51,7 @@ body{
     -webkit-appearance: none;
 
 }
+
 
 #gameName{
 	color: orange;
